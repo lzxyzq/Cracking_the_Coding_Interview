@@ -3,7 +3,7 @@
 # input   "Mr John Smith  ",  13
 # output  "Mr%20John%20Smith"
 
-MAX = 1000; 
+MAX = 1000
 def replaceSpaces(string):
     # Remove leading and trailing spaces 
     string = string.strip() 
@@ -18,7 +18,7 @@ def replaceSpaces(string):
     index = new_length - 1
     string = list(string) 
 
-    for f in range(i, new_length): 
+    for _ in range(i, new_length): 
         string.append('0') 
 
     for j in range(i-1,0,-1):
