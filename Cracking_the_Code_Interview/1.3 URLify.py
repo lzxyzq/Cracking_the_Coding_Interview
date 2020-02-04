@@ -32,9 +32,15 @@ def replaceSpaces(string):
             index -= 1
     return ''.join(string)
 # Method2
+def replaceSpaces2(string):
+    string = string.strip()
+    string = string.replace(' ',"%20")
+    return string
 
 # Driver Code 
 if __name__ == '__main__': 
     s = "Mr John Smith "
-    s = replaceSpaces(s)
-    print(s)
+    s1 = replaceSpaces(s)
+    s2 = replaceSpaces2(s)
+    print("Method1:",s1)
+    print("Method2:",s2)
