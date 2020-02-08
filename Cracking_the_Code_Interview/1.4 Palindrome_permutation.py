@@ -28,8 +28,11 @@ for c in s.lower():
             counts[c] = 1
 
     odd_counts = [count for count in counts.values() if count % 2 == 1]
-    print(odd_counts)
+
     return len(odd_counts) < 2
+
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 
 # Driver Code 
 if __name__ == '__main__': 
