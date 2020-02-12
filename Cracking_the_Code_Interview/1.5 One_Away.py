@@ -21,8 +21,6 @@ def one_away(s1,s2):
 def one_edit_replace(s1,s2):
     edited = False
     for c1, c2 in zip(s1, s2):
-        print("c1:",c1)
-        print("c2:",c2)
         if c1 != c2:
             if edited:
                 return False
