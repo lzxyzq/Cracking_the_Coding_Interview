@@ -1,7 +1,29 @@
-# Given an image represented by an N*N matrix, where each pixel in the image is 4 bytes, write a method rotate the image by 90 degrees.Can you do this in place?
+# Given a matrix, clockwise rotate elements in it.
+# Input
+# 1    2    3
+# 4    5    6
+# 7    8    9
+
+# Output:
+# 4    1    2
+# 7    5    3
+# 8    9    6
+
+# For 4*4 matrix
+# Input:
+# 1    2    3    4    
+# 5    6    7    8
+# 9    10   11   12
+# 13   14   15   16
+
+# Output:
+# 5    1    2    3
+# 9    10   6    4
+# 13   11   7    8
+# 14   15   16   12
 
 def rotate_matrix(mat):
-
+    
     if not len(mat):
         return
         # top : starting row index 
