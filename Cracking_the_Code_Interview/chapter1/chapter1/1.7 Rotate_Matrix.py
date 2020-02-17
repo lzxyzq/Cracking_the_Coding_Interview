@@ -1,4 +1,8 @@
 # Given an image represented by an N*N matrix, where each pixel in the image is 4 bytes, write a method rotate the image by 90 degrees.Can you do this in place?
+
+# 做法挺简单，先上下翻转，再延左上到右下的对角线进行翻转(镜像操作)。需要注意的是上下翻转的时候是rows-i-1，而不是rows-i。
+
+
 def rotate(matrix):
     if matrix:
         rows = len(matrix)
