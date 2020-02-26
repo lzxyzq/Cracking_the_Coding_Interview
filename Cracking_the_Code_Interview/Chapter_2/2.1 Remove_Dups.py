@@ -10,6 +10,11 @@ class Node:
         self.data = new_data
         self.next = None
 
+class LinkedList:
+    def __init__(self):
+        self.head = None
+    
+
 def push(head_ref, new_data):
     new_node = Node(0)
     new_node.data = new_data
