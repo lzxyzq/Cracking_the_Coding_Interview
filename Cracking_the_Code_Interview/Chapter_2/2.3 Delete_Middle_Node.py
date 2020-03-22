@@ -8,7 +8,6 @@ class Node:
         self.data = new_data
         self.next = next
 
-
 def delete_middle(node):
     if (node == None or node.next == None):
         return False
@@ -22,8 +21,7 @@ def printList(node) :
     while (node!=None):
         print(node.data,end=" ")
         node = node.next
-
-  
+ 
 # Code execution starts here 
 if __name__=='__main__': 
   
