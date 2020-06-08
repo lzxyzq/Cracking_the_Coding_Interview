@@ -29,3 +29,10 @@ Input: root = [5,3,6,2,4,null,null,1], k = 3
  1
 Output: 3
 '''
+
+class Solution:
+    def kthSmallest(self, root: TreeNode, k: int) -> int:
+        def inorder(r):
+            return inorder(r.left) + [r.val] + inorder(r.right) if r else []
+    
+        return inorder(root)[k - 1]

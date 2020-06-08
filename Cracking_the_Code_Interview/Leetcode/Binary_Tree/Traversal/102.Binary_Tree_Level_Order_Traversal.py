@@ -1,8 +1,8 @@
 '''
 @Author: your name
 @Date: 2020-05-27 15:04:14
-@LastEditTime: 2020-05-27 18:25:27
-@LastEditors: your name
+@LastEditTime: 2020-05-31 16:22:28
+@LastEditors: Please set LastEditors
 @Description: In User Settings Edit
 @FilePath: /Cracking_the_Code_Interview/Leetcode/Binary_Tree/Traversal/102.Binary_Tree_Level_Order_Traversal.py
 '''
@@ -23,7 +23,7 @@ return its level order traversal as:
 ]
  '''
 class Solution:
-    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+    def levelOrder(self, root):
         traversal_queue = [ root ] if root else []
         
         path = []

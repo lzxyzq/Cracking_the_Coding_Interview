@@ -29,7 +29,7 @@ The flattened tree should look like:
           6
  '''
 class Solution:
-    def flatten(self, root: TreeNode) -> None:
+    def flatten(self, root) :
         """
         Do not return anything, modify root in-place instead.
         """
