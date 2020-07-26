@@ -1,0 +1,12 @@
+queue<type> q;
+q.push(初始状态);
+while (!q.empty())
+{
+  type t = q.front() ;
+  q.pop();
+  遍历 t 的各个Next状态  next
+  { 
+    if (next is legal)
+      q.push(next); 计数或维护等; 
+  } 
+}
