@@ -1,11 +1,3 @@
-'''
-@Author: your name
-@Date: 2020-05-23 21:42:04
-@LastEditTime: 2020-05-23 22:14:40
-@LastEditors: Please set LastEditors
-@Description: In User Settings Edit
-@FilePath: /Cracking_the_Code_Interview/Leetcode/Binary_Tree/Traversal/144.Preorder_Traversal.py
-'''
 # Given a binary tree, return the preorder traversal of its nodes' values.
 ''' Example:
 Input: [1,null,2,3]

@@ -1,19 +1,3 @@
-'''
-@Author: your name
-@Date: 2020-05-28 18:58:52
-@LastEditTime: 2020-05-31 10:56:37
-@LastEditors: your name
-@Description: In User Settings Edit
-@FilePath: /Cracking_the_Code_Interview/Leetcode/Binary_Tree/Traversal/110.Balanced_Binary_Tree.py
-'''
-'''
-@Author: your name
-@Date: 2020-05-28 18:58:52
-@LastEditTime: 2020-05-28 19:00:03
-@LastEditors: Please set LastEditors
-@Description: In User Settings Edit
-@FilePath: /Cracking_the_Code_Interview/Leetcode/Binary_Tree/Traversal/110.Balanced_Binary_Tree.py
-'''
 # Given a binary tree, determine if it is height-balanced.
 
 # For this problem, a height-balanced binary tree is defined as:

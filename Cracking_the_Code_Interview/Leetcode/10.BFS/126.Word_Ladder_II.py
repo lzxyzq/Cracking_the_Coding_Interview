@@ -1,3 +1,4 @@
+
 # Given two words (beginWord and endWord), and a dictionary's word list, find all shortest transformation sequence(s) from beginWord to endWord, such that:
 
 # Only one letter can be changed at a time
@@ -12,8 +13,9 @@
 # You may assume beginWord and endWord are non-empty and are not the same.
 
 from collections import defaultdict
+import string
 class Solution:
-    def findLadders(self, beginWord: str, endWord: str, wordList: List[str]):
+    def findLadders(self, beginWord: str, endWord: str, wordList):
 
         level = {beginWord}
         parent = defaultdict(set) #key: word value:parent

@@ -1,11 +1,4 @@
-'''
-@Author: your name
-@Date: 2020-07-11 18:41:53
-@LastEditTime: 2020-07-11 21:08:15
-@LastEditors: Please set LastEditors
-@Description: In User Settings Edit
-@FilePath: /Cracking_the_Code_Interview/Leetcode/Amazon_OA/Zombie in Matrix.py
-'''
+
 # Given a 2D grid, each cell is either a zombie 1 or a human 0. Zombies can turn adjacent (up/down/left/right) human beings into zombies every hour. Find out how many hours does it take to infect all humans?
 
 ''' 
