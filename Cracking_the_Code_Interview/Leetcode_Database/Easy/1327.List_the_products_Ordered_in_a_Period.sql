@@ -75,3 +75,11 @@ Products with product_id = 4 was not ordered in February 2020.
 Products with product_id = 5 is ordered in February a total of (50 + 50) = 100.
 
 
+SELECT PRODUCT_NAME, SUM(UNIT) AS UNIT
+FROM PRODUCTS AS P
+INNER JOIN ORDERS AS O
+ON P.PRODUCT_ID = O.PRODUCT_ID
+WHERE LEFT(ORDER_DATE, 7) = '2020-02'
+GROUP BY 1
+HAVING SUM(UNIT) >= 100
+

@@ -44,20 +44,27 @@ For session_id 5 has a duration greater or equal than 15 minutes.
 
 
 
-select a.bin, count(b.bin) as total
-from
-(
-    select '[0-5>' as bin union select '[5-10>' as bin union select '[10-15>' as bin union select '15 or more' as bin 
-)a
-left join 
-(
-    select case
-        when duration < 300 then '[0-5>'
-        when duration >= 300 and duration < 600 then '[5-10>'
-        when duration >= 600 and duration < 900 then '[10-15>'
-        else '15 or more'
-        end bin
-    from Sessions 
-)b
-on a.bin = b.bin
-group by a.bin
+select '[0-5>' BIN, sum(if(duration<300,1,0)) TOTAL from Sessions 
+union 
+select '[5-10>' bin, sum(if(300<=duration and duration<600,1,0)) total from Sessions
+union 
+select '[10-15>' bin, sum(if(600<=duration and duration<900,1,0)) total from Sessions 
+union 
+select '15 or more' bin, sum(if(900<=duration,1,0)) total from Sessions 
+
+
+SELECT '[0-5>' bin, COUNT(*) total
+FROM Sessions
+WHERE duration BETWEEN 0 AND 5*60
+UNION ALL
+SELECT '[5-10>' bin, COUNT(*) total
+FROM Sessions
+WHERE duration BETWEEN 5*60 AND 10*60
+UNION ALL
+SELECT '[10-15>' bin, COUNT(*) total
+FROM Sessions
+WHERE duration BETWEEN 10*60 AND 15*60
+UNION ALL
+SELECT '15 or more' bin, COUNT(*) total
+FROM Sessions
+WHERE duration >= 15*60

@@ -62,3 +62,13 @@ SELECT
     ROUND(SUM(IF(rating < 3, 1, 0)) * 100 / COUNT(*), 2) poor_query_percentage
 FROM Queries
 GROUP BY query_name
+
+
+SELECT 
+    query_name, 
+    round(avg(rating/position), 2) as quality, 
+    round(sum(case when rating<3 then 1 else 0 end)/count(*)*100, 2) as poor_query_percentage
+FROM queries
+GROUP BY query_name
+
+
